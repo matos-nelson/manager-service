@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS manager (
-  id bigint PRIMARY KEY,
+  id BIGSERIAL PRIMARY KEY,
   address_id bigint NOT NULL,
   business_name varchar(150) NOT NULL,
   user_id varchar(255) NOT NULL,
