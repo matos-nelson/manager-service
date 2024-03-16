@@ -15,7 +15,6 @@ public class ManagerDto {
 
     private Long addressId;
     private String businessName;
-    private String userId;
     private String email;
     private String phone;
 }

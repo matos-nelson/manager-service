@@ -77,6 +77,5 @@ public class ManagerMapperTest {
         assertEquals(manager.getPhone(), result.getPhone());
         assertEquals(manager.getEmail(), result.getEmail());
         assertEquals(manager.getBusinessName(), result.getBusinessName());
-        assertEquals(manager.getUserId(), result.getUserId());
     }
 }
