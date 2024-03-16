@@ -1,0 +1,1 @@
+INSERT INTO manager(id, address_id, business_name, user_id, email, phone) values (100, 200, 'First Business', 'auth_manager', 'manager@email.com', '1234567890');
