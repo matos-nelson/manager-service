@@ -4,6 +4,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.rent.circle.manager.api.dto.ManagerDto;
 import org.rent.circle.manager.api.dto.SaveManagerInfoDto;
 import org.rent.circle.manager.api.persistence.model.Manager;
 import org.rent.circle.manager.api.persistence.repository.ManagerRepository;
@@ -22,5 +23,10 @@ public class ManagerService {
         Manager manager = managerMapper.toModel(managerInfo);
         managerRepository.persist(manager);
         return manager.getId();
+    }
+
+    public ManagerDto getManagerInfo(String userId) {
+        Manager manager = managerRepository.findByUserId(userId);
+        return managerMapper.toDto(manager);
     }
 }
