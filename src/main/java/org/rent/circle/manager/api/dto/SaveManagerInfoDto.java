@@ -20,6 +20,10 @@ public class SaveManagerInfoDto {
 
     @NotNull
     @NotBlank
+    private String userId;
+
+    @NotNull
+    @NotBlank
     private String businessName;
 
     @NotNull
